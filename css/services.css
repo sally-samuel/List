@@ -15,7 +15,8 @@
      .hero { 
       position: relative; 
       height: 350px!important; 
-      background:  url('../images/service.jpg') center/cover no-repeat fixed !important;
+      background:  url('../images/service.jpg') center/cover no-repeat  !important;
+      background-attachment: scroll !important;
       color: white; 
       display: flex; 
       align-items: center; 
@@ -220,3 +221,4 @@
     font-size: 12px !important;
   }
 }
+
