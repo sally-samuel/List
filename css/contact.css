@@ -16,7 +16,8 @@
     .hero { 
       position: relative; 
       height: 350px!important; 
-      background:  url('../images/pexels-photo-356036.jpeg') center/cover no-repeat fixed !important;
+      background:  url('../images/pexels-photo-356036.jpeg') center/cover no-repeat  !important;
+      background-attachment: scroll !important;
       color: white; 
       display: flex; 
       align-items: center; 
@@ -106,4 +107,5 @@
       .hero h1 { font-size: 3rem; } 
       .map-container { height: 250px; }
     }
+
  
