@@ -6,7 +6,8 @@
     .hero { 
       position: relative; 
       height: 350px!important; 
-      background:  url('../images/solar-panel-installation-.jpg') center/cover no-repeat fixed !important;
+      background:  url('../images/solar-panel-installation-.jpg') center/cover no-repeat  !important;
+      background-attachment: scroll !important;
       color: white; 
       display: flex; 
       align-items: center; 
@@ -225,3 +226,4 @@
       margin-bottom: 0.75rem;
     }
   }
+
