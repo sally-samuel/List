@@ -1,0 +1,187 @@
+*{
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+}
+    .hero { 
+      position: relative; 
+      height: 350px!important; 
+      background:  url('../images/solar-panel-installation-.jpg') center/cover no-repeat fixed !important;
+      color: white; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      text-align: center; 
+    }
+    .hero::before { 
+      content: ''; 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0; 
+     
+    }
+    .hero-content { 
+      position: relative; 
+      z-index: 2;
+       max-width: 900px; 
+       padding: 2rem; 
+      }
+    .hero h1 { 
+      margin-top: 100px!important;
+      font-size: 2rem!important; 
+      font-weight: 600!important; 
+      text-shadow: 3px 3px 8px rgba(124, 203, 13, 0.6); 
+      
+    }
+    .hero p { 
+      font-size: 1.4rem; 
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6); 
+    }
+
+    .section-title { 
+      color: var(--primary); 
+      font-weight: 700; 
+      position: relative; 
+      display: inline-block; 
+    }
+    .section-title::after { 
+      content: ''; 
+      position: absolute; 
+      width: 60px; 
+      height: 4px; 
+      background: var(--accent); 
+      bottom: -10px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      border-radius: 2px; 
+    }
+
+    .feature-card { 
+      border: none; 
+      border-radius: 15px; 
+      overflow: hidden; 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+      transition: 0.3s; 
+    }
+    .feature-card:hover { 
+      transform: translateY(-10px); 
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
+    }
+
+    
+    .stats { 
+      font-size: 1.5rem!important; 
+      font-weight: 700!important; 
+      color: var(--primary); 
+    }
+
+   
+    .profile-badge {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 0 0 15px 15px;
+      display: inline-block;
+      margin-top: -60px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Section Title */
+    .section-title {
+      color: var(--primary);
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+   
+
+    /* Mission & Vision Cards */
+    .mission-vision-card {
+      background: white;
+      border-radius: 15px;
+      padding: 2.5rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      height: 100%;
+      transition: transform 0.3s;
+    }
+    .mission-vision-card:hover {
+      transform: translateY(-10px);
+    }
+    .mission-vision-card i {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    /* Core Values */
+    .core-value-card {
+      background: var(--light);
+      color: black;
+      padding: 2rem;
+      border-radius: 15px;
+      border: #359335 2px solid ;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .core-value-card:hover {
+      transform: translateY(-10px);
+    }
+    .core-value-card i {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .core-value-card h5 {
+      background: var(--accent);
+      color: var(--primary);
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+  
+    .skill-badge {
+      background: #e6f7e6;
+      color: var(--primary);
+      padding: 0.4rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      margin: 0.25rem;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+   
+
+
+  
+   
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    @media (max-width: 768px) {
+       .hero h1 { font-size: 3rem; } }
+
+    
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { font-size: 1.1rem; }
+      .profile-badge { font-size: 1.5rem; padding: 0.75rem 1.5rem; }
+    }

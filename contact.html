@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+  <title>Contact Us - Limitless Solar Tech | Solar Experts in Nigeria</title>
+  <meta name="description" content="Contact Limitless Solar Tech for solar installation, maintenance, or free energy audit in Lagos and across Nigeria.">
+  <meta name="keywords" content="solar contact Nigeria, solar installation Lagos, get solar quote, solar support">
+  <link rel="canonical" href="https://www.limitlesssolartech.com/contact.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- EmailJS v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top py-2">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./images/image.png" alt="logo" class="me-2" style="height: 50px; width: 100px; background-color: white;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav1">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Get in Touch</h1>
+    <p class="lead">We’re here to answer your solar questions and power your future.</p>
+    <a href="#contact-form" class="btn btn-primary btn-lg">Send Message</a>
+  </div>
+</header>
+
+<!-- Contact Section -->
+<section class="py-5" id="contact-form">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Contact Info -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <h2 class="section-title mb-4">Contact Information</h2>
+        
+        <div class="contact-card p-4 mb-4">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-geo-alt-fill contact-icon me-3"></i>
+            <div>
+              <h5 class="mb-0">Office Address</h5>
+              <p class="mb-0">9 Ocean Bay Estate, Lekki Orchid Road, Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card p-4 mb-4">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-telephone-fill contact-icon me-3"></i>
+            <div>
+              <h5 class="mb-0">Call or WhatsApp</h5>
+              <p class="mb-0">
+                <a href="tel:+2348061203027" class="text-decoration-none">+234 806 120 3027</a><br>
+                <a href="https://wa.me/2348061203027" target="_blank" class="text-success">Chat on WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card p-4 mb-4">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-envelope-fill contact-icon me-3"></i>
+            <div>
+              <h5 class="mb-0">Email Us</h5>
+              <p class="mb-0">
+                <a href="mailto:limitlessolartech@gmail.com">limitlessolartech@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card p-4">
+          <h5 class="mb-3">Business Hours</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Mon–Sat:</strong> 9:00 AM – 5:00 PM</li>
+            <li><strong>Sunday:</strong> Closed</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7" data-aos="fade-left">
+        <h2 class="section-title mb-4">Send Us a Message</h2>
+        <div class="contact-card p-4 p-md-5  " style="min-height:600px;">
+          <form id="contactForm">
+            <div class="row g-3" >
+              <div class="col-md-6" style="padding-top: 20px;" >
+                <input type="text" class="form-control"  id="fullName" placeholder="Full Name *" required>
+              </div>
+              <div class="col-md-6" style="padding-top: 20px;">
+                <input type="email" class="form-control" id="email" placeholder="Email Address *" required>
+              </div>
+              <div class="col-md-6" style="padding-top: 20px;">
+                <input type="tel" class="form-control" id="phone" placeholder="Phone Number *" required>
+              </div>
+              <div class="col-md-6" style="padding-top: 20px;">
+                <select class="form-control" id="service" required>
+                  <option value="">Select Service *</option>
+                  <option>Residential Solar</option>
+                  <option>Commercial Solar</option>
+                  <option>Maintenance</option>
+                  <option>Energy Audit</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12" style="padding-top: 20px;">
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message *" required></textarea>
+              </div>
+              <div class="col-12" style="margin-top: 30px;">
+                <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                  <span id="btnText">Send Message</span>
+                  <span id="btnSpinner" class="spinner-border spinner-border-sm ms-2" role="status" style="display:none;"></span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <small class="text-muted d-block mt-3">* We respect your privacy. Your info is safe with us.</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="mt-5" data-aos="fade-up">
+      <h2 class="section-title text-center mb-4">Find Us on the Map</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.693182217151!2d3.467855614772!3d6.429055995342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4f9c2a2e5b3%3A0x8f8e8f8e8f8e8f8e!2sOcean%20Bay%20Estate%2C%20Lekki!5e0!3m2!1sen!2sng!4v1698000000000!5m2!1sen!2sng" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-band py-5 text-center">
+  <div class="container" data-aos="zoom-in">
+    <h3>Need Solar Now?</h3>
+    <p class="mb-4">Get in touch for instant support</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="pt-5 pb-2 bg-dark text-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="d-flex align-items-center mb-3">
+          <img src="./images/image.png" alt="Logo" style="height: 70px; width: 150px; background: white; border-radius: 8px;" >
+        </div>
+        <p class="small text-light">Innovative solar solutions for Nigeria.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html" class="nav-link text-light">Home</a></li>
+          <li><a href="about.html" class="nav-link text-light">About</a></li>
+          <li><a href="services.html" class="nav-link text-light">Services</a></li>
+          <li><a href="contact.html" class="nav-link text-light">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3">Contact</h6>
+        <ul class="list-unstyled small mb-0">
+          <li><i class="bi bi-geo-alt text-warning me-1"></i> 9 Ocean Bay Estate, Lekki, Lagos</li>
+          <li><i class="bi bi-telephone text-warning me-1"></i> +234 806 120 3027</li>
+          <li><i class="bi bi-envelope text-warning me-1"></i> limitlessolartech@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary my-4" />
+    <p class="small text-center mb-0">© 2025 Limitless Solar Tech. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({ duration: 1000, once: true });
+  window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Initialize EmailJS
+  emailjs.init("Q23MeEo6v2cWNdI_b");
+
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const btnText = document.getElementById('btnText');
+  const btnSpinner = document.getElementById('btnSpinner');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Disable button and show spinner
+    submitBtn.disabled = true;
+    btnText.textContent = 'Sending...';
+    btnSpinner.style.display = 'inline-block';
+
+    const templateParams = {
+      from_name: document.getElementById('fullName').value,
+      from_email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      service: document.getElementById('service').value,
+      message: document.getElementById('message').value
+    };
+
+    emailjs.send("service_fmoy8xn", "template_zon809r", templateParams)
+      .then(() => {
+        alert('Message sent! Thank you.');
+        contactForm.reset();
+      })
+      .catch((err) => {
+        console.error('EmailJS error:', err);
+        alert('Failed to send. Try again later.');
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        btnText.textContent = 'Send Message';
+        btnSpinner.style.display = 'none';
+      });
+  });
+</script>
+</body>
+</html>
