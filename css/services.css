@@ -181,10 +181,42 @@
 
     
    
-    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
-    @media (max-width: 768px) { 
-      .hero h1 { font-size: 3rem; } 
+   @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    
+
+  
+@media (max-width: 768px) {
+  .hero h1 { font-size: 3rem; } 
       .service-card img { height: 180px; } 
       .timeline::before { left: 0.5rem; }
       .timeline-item { padding-left: 2rem; }
-    }
+
+  .solar-table th,
+  .solar-table td {
+    font-size: 13px !important;
+    padding: 10px !important;
+    white-space: normal !important;
+  }
+
+  .solar-table .package-name small,
+  .solar-table td small {
+    font-size: 12px !important;
+    display: block;
+  }
+
+  .load-list {
+    padding-left: 1rem !important;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .solar-table td {
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  
+  .solar-table th {
+    font-size: 12px !important;
+  }
+}
